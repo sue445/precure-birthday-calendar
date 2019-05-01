@@ -1,37 +1,34 @@
 RSpec.describe BirthdayCalendar do
   let(:calendar) { BirthdayCalendar.new(config_name) }
 
-  let(:config_name) { "prichan" }
+  let(:config_name) { "precure" }
 
-  let(:mirai) { Hashie::Mash.new(name: "桃山みらい", birthday: "7/12", description: "デコレーションケーキの日") }
-  let(:emo)   { Hashie::Mash.new(name: "萌黄えも", birthday: "9/9", description: "ポップコーンの日") }
-  let(:marie) { Hashie::Mash.new(name: "マリー", birthday: "7/4") }
-  let(:laala) { Hashie::Mash.new(name: "真中らぁら", birthday: "11/20", description: "ピザの日") }
-  let(:nao)   { Hashie::Mash.new(name: "愛媛なお", birthday: "11/20", description: "らぁらと同じ日") }
+  let(:hagtan)    { Hashie::Mash.new(name: "はぐたん", birthday: "10/21") }
+  let(:cure_star) { Hashie::Mash.new(name: "キュアスター(星奈ひかる)", birthday: "4/12") }
 
-  describe ".generate_all_ical_files" do
-    include_context "uses temp dir"
-
-    subject do
-      BirthdayCalendar.generate_all_ical_files(temp_dir)
-
-      temp_dir_path.join("prichan.ics")
-    end
-
-    it { should be_exist }
-  end
-
-  describe "#generate_ical_file" do
-    include_context "uses temp dir"
-
-    subject do
-      calendar.generate_ical_file(temp_dir)
-
-      temp_dir_path.join("prichan.ics")
-    end
-
-    it { should be_exist }
-  end
+  # describe ".generate_all_ical_files" do
+  #   include_context "uses temp dir"
+  #
+  #   subject do
+  #     BirthdayCalendar.generate_all_ical_files(temp_dir)
+  #
+  #     temp_dir_path.join("prichan.ics")
+  #   end
+  #
+  #   it { should be_exist }
+  # end
+  #
+  # describe "#generate_ical_file" do
+  #   include_context "uses temp dir"
+  #
+  #   subject do
+  #     calendar.generate_ical_file(temp_dir)
+  #
+  #     temp_dir_path.join("prichan.ics")
+  #   end
+  #
+  #   it { should be_exist }
+  # end
 
   describe "#birthdays" do
     subject { calendar.birthdays(from_year: from_year, to_year: to_year) }
@@ -39,35 +36,22 @@ RSpec.describe BirthdayCalendar do
     let(:from_year) { 2018 }
     let(:to_year)   { 2020 }
 
-    context "when prichan" do
-      let(:config_name) { "prichan" }
-
-      it { should include(CalendarRow.new(date: Date.new(2018, 7, 12), chara: mirai)) }
-      it { should include(CalendarRow.new(date: Date.new(2018, 9, 9),  chara: emo)) }
-      it { should include(CalendarRow.new(date: Date.new(2018, 7, 4),  chara: marie)) }
-      it { should include(CalendarRow.new(date: Date.new(2020, 7, 12), chara: mirai)) }
-    end
-
-    context "when pripara" do
-      let(:config_name) { "pripara" }
-
-      it { should include(CalendarRow.new(date: Date.new(2018, 11, 20), chara: laala)) }
-      it { should include(CalendarRow.new(date: Date.new(2018, 11, 20), chara: nao)) }
-    end
+    it { should include(CalendarRow.new(date: Date.new(2018, 10, 21), chara: hagtan)) }
+    it { should include(CalendarRow.new(date: Date.new(2018, 4, 12), chara: cure_star)) }
   end
 
-  describe "#birthday_ical" do
-    subject { calendar.birthday_ical(calendar_rows) }
-
-    let(:calendar_rows) do
-      [
-        CalendarRow.new(date: Date.new(2018, 7, 12), chara: mirai),
-        CalendarRow.new(date: Date.new(2018, 9, 9),  chara: emo),
-      ]
-    end
-
-    it { should include "X-WR-CALNAME;VALUE=TEXT:キラッとプリ☆チャンの誕生日" }
-    it { should include "DTSTART;VALUE=DATE:20180712\r\nDESCRIPTION:デコレーションケーキの日\r\nSUMMARY:桃山みらいの誕生日\r\n" }
-    it { should include "DTSTART;VALUE=DATE:20180909\r\nDESCRIPTION:ポップコーンの日\r\nSUMMARY:萌黄えもの誕生日\r\n" }
-  end
+  # describe "#birthday_ical" do
+  #   subject { calendar.birthday_ical(calendar_rows) }
+  #
+  #   let(:calendar_rows) do
+  #     [
+  #       CalendarRow.new(date: Date.new(2018, 7, 12), chara: mirai),
+  #       CalendarRow.new(date: Date.new(2018, 9, 9),  chara: emo),
+  #     ]
+  #   end
+  #
+  #   it { should include "X-WR-CALNAME;VALUE=TEXT:キラッとプリ☆チャンの誕生日" }
+  #   it { should include "DTSTART;VALUE=DATE:20180712\r\nDESCRIPTION:デコレーションケーキの日\r\nSUMMARY:桃山みらいの誕生日\r\n" }
+  #   it { should include "DTSTART;VALUE=DATE:20180909\r\nDESCRIPTION:ポップコーンの日\r\nSUMMARY:萌黄えもの誕生日\r\n" }
+  # end
 end
