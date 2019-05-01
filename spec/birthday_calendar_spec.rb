@@ -40,18 +40,18 @@ RSpec.describe BirthdayCalendar do
     it { should include(CalendarRow.new(date: Date.new(2018, 4, 12), chara: cure_star)) }
   end
 
-  # describe "#birthday_ical" do
-  #   subject { calendar.birthday_ical(calendar_rows) }
-  #
-  #   let(:calendar_rows) do
-  #     [
-  #       CalendarRow.new(date: Date.new(2018, 7, 12), chara: mirai),
-  #       CalendarRow.new(date: Date.new(2018, 9, 9),  chara: emo),
-  #     ]
-  #   end
-  #
-  #   it { should include "X-WR-CALNAME;VALUE=TEXT:キラッとプリ☆チャンの誕生日" }
-  #   it { should include "DTSTART;VALUE=DATE:20180712\r\nDESCRIPTION:デコレーションケーキの日\r\nSUMMARY:桃山みらいの誕生日\r\n" }
-  #   it { should include "DTSTART;VALUE=DATE:20180909\r\nDESCRIPTION:ポップコーンの日\r\nSUMMARY:萌黄えもの誕生日\r\n" }
-  # end
+  describe "#birthday_ical" do
+    subject { calendar.birthday_ical(calendar_rows) }
+
+    let(:calendar_rows) do
+      [
+        CalendarRow.new(date: Date.new(2018, 10, 21), chara: hagtan),
+        CalendarRow.new(date: Date.new(2018, 4, 12), chara: cure_star),
+      ]
+    end
+
+    it { should include "X-WR-CALNAME;VALUE=TEXT:プリキュアの誕生日" }
+    it { should include "DTSTART;VALUE=DATE:20181021\r\nSUMMARY:はぐたんの誕生日\r\n" }
+    it { should include "DTSTART;VALUE=DATE:20180412\r\nSUMMARY:キュアスター(星奈ひかる)の誕生日\r\n" }
+  end
 end
