@@ -8,7 +8,7 @@ https://sue445.github.io/precure-birthday-calendar/
 ## ical一覧
 icalのURLをGoogleカレンダーなどに登録することで、自分のカレンダーに表示することができます
 
-* プリキュア : https://sue445.github.io/precure-birthday-calendar/pretty_rhythm.ics
+* プリキュア : https://sue445.github.io/precure-birthday-calendar/precure.ics
 
 ## 誕生日の編集方法
 [rubicure](https://github.com/sue445/rubicure) のデータからicsを自動生成します。
