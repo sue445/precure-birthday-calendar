@@ -6,29 +6,29 @@ RSpec.describe BirthdayCalendar do
   let(:hagtan)    { Hashie::Mash.new(name: "はぐたん", birthday: "10/21") }
   let(:cure_star) { Hashie::Mash.new(name: "キュアスター(星奈ひかる)", birthday: "4/12") }
 
-  # describe ".generate_all_ical_files" do
-  #   include_context "uses temp dir"
-  #
-  #   subject do
-  #     BirthdayCalendar.generate_all_ical_files(temp_dir)
-  #
-  #     temp_dir_path.join("prichan.ics")
-  #   end
-  #
-  #   it { should be_exist }
-  # end
-  #
-  # describe "#generate_ical_file" do
-  #   include_context "uses temp dir"
-  #
-  #   subject do
-  #     calendar.generate_ical_file(temp_dir)
-  #
-  #     temp_dir_path.join("prichan.ics")
-  #   end
-  #
-  #   it { should be_exist }
-  # end
+  describe ".generate_all_ical_files" do
+    include_context "uses temp dir"
+
+    subject do
+      BirthdayCalendar.generate_all_ical_files(temp_dir)
+
+      temp_dir_path.join("precure.ics")
+    end
+
+    it { should be_exist }
+  end
+
+  describe "#generate_ical_file" do
+    include_context "uses temp dir"
+
+    subject do
+      calendar.generate_ical_file(temp_dir)
+
+      temp_dir_path.join("precure.ics")
+    end
+
+    it { should be_exist }
+  end
 
   describe "#birthdays" do
     subject { calendar.birthdays(from_year: from_year, to_year: to_year) }
