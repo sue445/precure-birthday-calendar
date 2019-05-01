@@ -7,6 +7,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "hashie"
 gem "icalendar"
 gem "rake", require: false
+gem "rubicure"
 
 group :test do
   gem "rspec"
