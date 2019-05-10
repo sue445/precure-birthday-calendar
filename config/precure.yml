@@ -1,5 +1,6 @@
 title: "プリキュア"
 
+# https://github.com/sue445/rubicure で定義されていないキャラの誕生日のみ記載する
 characters:
   - name:     "はぐたん"
     birthday: "10/21"
