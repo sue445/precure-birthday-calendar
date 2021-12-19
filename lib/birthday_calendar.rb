@@ -1,5 +1,11 @@
 ENV["ENVIRONMENT"] ||= "development"
 
+begin
+  # workaround for activesupport 7.0.0
+  # c.f. https://github.com/rails/rails/issues/43851
+  require "active_support/isolated_execution_state"
+rescue LoadError
+end
 Bundler.require(*[:default, ENV["ENVIRONMENT"]].compact)
 
 require "date"
