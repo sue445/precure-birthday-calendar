@@ -18,3 +18,11 @@ characters:
   # c.f. https://twitter.com/miso_katsu/status/1450085557258780674
   - name:     くるるん
     birthday: "9/6"
+
+  # c.f. https://www.toei-anim.co.jp/tv/precure/character/energy1.php
+  - name:     コメコメ
+    birthday: "8/18"
+  - name:     パムパム
+    birthday: "4/12"
+  - name:     メンメン
+    birthday: "11/11"
