@@ -26,3 +26,7 @@ characters:
     birthday: "4/12"
   - name:     メンメン
     birthday: "11/11"
+
+  # c.f. https://www.toei-anim.co.jp/tv/precure/character/oicina1.php#charaarea
+  - name:     品田拓海
+    birthday: "11/3"
