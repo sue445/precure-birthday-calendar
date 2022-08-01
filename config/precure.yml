@@ -30,3 +30,7 @@ characters:
   # c.f. https://www.toei-anim.co.jp/tv/precure/character/oicina1.php#charaarea
   - name:     品田拓海
     birthday: "11/3"
+
+  # c.f. https://www.toei-anim.co.jp/tv/precure/character/cooking1.php
+  - name:     ローズマリー
+    birthday: "8/2"
