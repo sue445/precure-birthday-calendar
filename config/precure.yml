@@ -34,3 +34,7 @@ characters:
   # c.f. https://www.toei-anim.co.jp/tv/precure/character/cooking1.php
   - name:     ローズマリー
     birthday: "8/2"
+
+  # https://www.toei-anim.co.jp/tv/precure/character/chara5.php
+  - name:     エル
+    birthday: "3/12"
