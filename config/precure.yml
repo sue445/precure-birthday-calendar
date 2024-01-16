@@ -2,9 +2,11 @@ title: "プリキュア"
 
 # https://github.com/sue445/rubicure で定義されていないキャラの誕生日のみ記載する
 characters:
+  # ＨＵＧっと！プリキュア
   - name:     "はぐたん"
     birthday: "10/21"
 
+  # ヒーリングっど♥プリキュア
   # c.f. http://www.toei-anim.co.jp/tv/precure/character/chara4.php
   - name:     ラビリン
     birthday: "3/3"
@@ -15,10 +17,12 @@ characters:
   - name:     ラテ
     birthday: "11/1"
 
+  # トロピカル～ジュ！プリキュア
   # c.f. https://twitter.com/miso_katsu/status/1450085557258780674
   - name:     くるるん
     birthday: "9/6"
 
+  # デリシャスパーティ♡プリキュア
   # c.f. https://www.toei-anim.co.jp/tv/precure/character/energy1.php
   - name:     コメコメ
     birthday: "8/18"
