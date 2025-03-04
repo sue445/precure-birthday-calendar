@@ -8,6 +8,7 @@ gem "hashie"
 gem "icalendar"
 gem "rake", require: false
 gem "rubicure", ">= 3.2.0.rc1"
+gem "uri", ">= 1.0.3"
 
 group :test do
   gem "rspec"
