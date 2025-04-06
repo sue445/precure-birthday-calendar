@@ -13,6 +13,6 @@ icalのURLをGoogleカレンダーなどに登録することで、自分のカ�
 ## 誕生日の編集方法
 [rubicure](https://github.com/sue445/rubicure) のデータからicsを自動生成します。
 
-rubicureに載っていないキャラの誕生日は [config/precure.yml](config/precure.yml) を編集してください
+rubicureに載っていないキャラの誕生日は [config/sub_characters.yml](config/sub_characters.yml) を編集してください
 
 [docs/](docs/) の `ics` ファイルはCIでcommitされるので基本的に手動変更不要です。

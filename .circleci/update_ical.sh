@@ -14,7 +14,7 @@ git config push.default current
 git config user.name "CircleCI"
 git config user.email ${EMAIL}
 
-bundle exec rake generate_ical
+bundle exec rake generate_all
 
 changed_num=`git --no-pager diff --unified=0 -- docs/*.ics | grep -v "@@" | grep -v " a/" | grep -v " b/" | grep -v "index " | wc -l`
 

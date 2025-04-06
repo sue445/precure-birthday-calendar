@@ -9,13 +9,15 @@ RSpec.describe BirthdayCalendar do
   describe ".generate_all_ical_files" do
     include_context "uses temp dir"
 
-    subject do
-      BirthdayCalendar.generate_all_ical_files(temp_dir)
+    subject { BirthdayCalendar.generate_all_ical_files(temp_dir) }
 
-      temp_dir_path.join("precure.ics")
+    it "files are exists" do
+      subject
+
+      expect(temp_dir_path.join("precure.ics")).to be_exist
+      expect(temp_dir_path.join("sub_characters.ics")).to be_exist
+      expect(temp_dir_path.join("dancing_star.ics")).to be_exist
     end
-
-    it { should be_exist }
   end
 
   describe "#generate_ical_file" do
@@ -36,8 +38,17 @@ RSpec.describe BirthdayCalendar do
     let(:from_year) { 2018 }
     let(:to_year)   { 2020 }
 
-    it { should include(CalendarRow.new(date: Date.new(2018, 10, 21), chara: hagtan)) }
-    it { should include(CalendarRow.new(date: Date.new(2018, 4, 12), chara: cure_star)) }
+    context "config/precure.yml" do
+      let(:config_name) { "precure" }
+
+      it { should include(CalendarRow.new(date: Date.new(2018, 4, 12), chara: cure_star)) }
+    end
+
+    context "config/sub_characters.yml" do
+      let(:config_name) { "sub_characters" }
+
+      it { should include(CalendarRow.new(date: Date.new(2018, 10, 21), chara: hagtan)) }
+    end
   end
 
   describe "#birthday_ical" do
