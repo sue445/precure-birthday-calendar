@@ -10,10 +10,13 @@ characters:
   # c.f. http://www.toei-anim.co.jp/tv/precure/character/chara4.php
   - name:     ラビリン
     birthday: 3/3
+
   - name:     ペギタン
     birthday: 4/25
+
   - name:     ニャトラン
     birthday: 2/22
+
   - name:     ラテ
     birthday: 11/1
 
@@ -26,8 +29,10 @@ characters:
   # c.f. https://www.toei-anim.co.jp/tv/precure/character/energy1.php
   - name:     コメコメ
     birthday: 8/18
+
   - name:     パムパム
     birthday: 4/12
+
   - name:     メンメン
     birthday: 11/11
 
