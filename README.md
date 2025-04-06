@@ -9,6 +9,8 @@ https://sue445.github.io/precure-birthday-calendar/
 icalのURLをGoogleカレンダーなどに登録することで、自分のカレンダーに表示することができます
 
 * プリキュア : https://sue445.github.io/precure-birthday-calendar/precure.ics
+* プリキュアのサブキャラ : https://sue445.github.io/precure-birthday-calendar/sub_characters.ics
+* Dancing☆Starプリキュア : https://sue445.github.io/precure-birthday-calendar/dancing_star.ics
 
 ## 誕生日の編集方法
 [rubicure](https://github.com/sue445/rubicure) のデータからicsを自動生成します。
