@@ -2,6 +2,11 @@ task :environment do
   require_relative "./lib/birthday_calendar"
 end
 
+desc "Generate config/precure.yml"
+task :generate_precure_config => :environment do
+  BirthdayCalendar.generate_precure_config
+end
+
 desc "Generate ical files"
 task :generate_ical, [:config_name] => :environment do |_task, args|
   config_name = args[:config_name]
