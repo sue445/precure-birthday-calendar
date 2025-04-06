@@ -5,181 +5,121 @@ title: プリキュア
 characters:
 - name: キュアブラック(美墨なぎさ)
   birthday: 10/10
-  cast_name: 本名陽子
 - name: キュアホワイト(雪城ほのか)
   birthday: 4/4
-  cast_name: ゆかな
 - name: シャイニールミナス(九条ひかり)
   birthday: 9/9
-  cast_name: 田中理恵
 - name: キュアブルーム(日向咲)
   birthday: 8/7
-  cast_name: 樹元オリエ
 - name: キュアイーグレット(美翔舞)
   birthday: 11/20
-  cast_name: 榎本温子
 - name: キュアハート(相田マナ)
   birthday: 8/4
-  cast_name: 生天目仁美
 - name: キュアダイヤモンド(菱川六花)
   birthday: 9/17
-  cast_name: 寿美菜子
 - name: キュアロゼッタ(四葉ありす)
   birthday: 5/28
-  cast_name: 渕上舞
 - name: キュアソード(剣崎真琴)
   birthday: 11/4
-  cast_name: 宮本佳那子
 - name: キュアラブリー(愛乃めぐみ)
   birthday: 10/12
-  cast_name: 中島愛
 - name: キュアプリンセス(白雪ひめ)
   birthday: 4/1
-  cast_name: 潘めぐみ
 - name: キュアハニー(大森ゆうこ)
   birthday: 8/2
-  cast_name: 北川里奈
 - name: キュアフォーチュン(氷川いおな)
   birthday: 10/7
-  cast_name: 戸松遥
 - name: キュアフローラ(春野はるか)
   birthday: 4/10
-  cast_name: 嶋村侑
 - name: キュアマーメイド(海藤みなみ)
   birthday: 7/20
-  cast_name: 浅野真澄
 - name: キュアトゥインクル(天ノ川きらら)
   birthday: 9/12
-  cast_name: 山村響
 - name: キュアスカーレット(紅城トワ)
   birthday: 12/15
-  cast_name: 沢城みゆき
 - name: キュアミラクル(朝日奈みらい)
   birthday: 6/12
-  cast_name: 高橋李依
 - name: キュアマジカル(十六夜リコ)
   birthday: 11/12
-  cast_name: 堀江由衣
 - name: キュアホイップ(宇佐美いちか)
   birthday: 1/7
-  cast_name: 美山加恋
 - name: キュアカスタード(有栖川ひまり)
   birthday: 4/16
-  cast_name: 福原遥
 - name: キュアジェラート(立神あおい)
   birthday: 8/27
-  cast_name: 村中知
 - name: キュアマカロン(琴爪ゆかり)
   birthday: 6/11
-  cast_name: 藤田咲
 - name: キュアショコラ(剣城あきら)
   birthday: 9/24
-  cast_name: 森なな子
 - name: キュアパルフェ(キラ星シエル)
   birthday: 7/30
-  cast_name: 水瀬いのり
 - name: キュアエール(野乃はな)
   birthday: 1/20
-  cast_name: 引坂理絵
 - name: キュアアンジュ(薬師寺さあや)
   birthday: 6/10
-  cast_name: 本泉莉奈
 - name: キュアエトワール(輝木ほまれ)
   birthday: 4/8
-  cast_name: 小倉唯
 - name: キュアマシェリ(愛崎えみる)
   birthday: 7/15
-  cast_name: 田村奈央
 - name: キュアアムール(ルールー・アムール)
   birthday: 9/23
-  cast_name: 田村ゆかり
 - name: キュアスター(星奈ひかる)
   birthday: 4/12
-  cast_name: 成瀬瑛美
 - name: キュアミルキー(羽衣ララ)
   birthday: 7/7
-  cast_name: 小原好美
 - name: キュアソレイユ(天宮えれな)
   birthday: 9/8
-  cast_name: 安野希世乃
 - name: キュアセレーネ(香久矢まどか)
   birthday: 11/23
-  cast_name: 小松未可子
 - name: キュアコスモ(ユニ)
   birthday: 10/11
-  cast_name: 上坂すみれ
 - name: キュアグレース(花寺のどか)
   birthday: 3/9
-  cast_name: 悠木碧
 - name: キュアフォンテーヌ(沢泉ちゆ)
   birthday: 8/21
-  cast_name: 依田菜津
 - name: キュアスパークル(平光ひなた)
   birthday: 10/4
-  cast_name: 河野ひより
 - name: キュアアース(風鈴アスミ)
   birthday: 8/16
-  cast_name: 三森すずこ
 - name: キュアサマー(夏海まなつ)
   birthday: 8/1
-  cast_name: ファイルーズあい
 - name: キュアコーラル(涼村さんご)
   birthday: 5/9
-  cast_name: 花守ゆみり
 - name: キュアパパイア(一ノ瀬みのり)
   birthday: 11/21
-  cast_name: 石川由依
 - name: キュアフラミンゴ(滝沢あすか)
   birthday: 10/15
-  cast_name: 瀬戸麻沙美
 - name: キュアラメール(ローラ・ラメール)
   birthday: 6/30
-  cast_name: 日高里菜
 - name: キュアプレシャス(和実ゆい)
   birthday: 8/31
-  cast_name: 菱川花菜
 - name: キュアスパイシー(芙羽ここね)
   birthday: 3/13
-  cast_name: 清水理沙
 - name: キュアヤムヤム(華満らん)
   birthday: 7/11
-  cast_name: 井口裕香
 - name: キュアフィナーレ(菓彩あまね)
   birthday: 11/24
-  cast_name: 茅野愛衣
 - name: キュアスカイ(ソラ・ハレワタール)
   birthday: 9/20
-  cast_name: 関根明良
 - name: キュアプリズム(虹ヶ丘ましろ)
   birthday: 7/16
-  cast_name: 加隈亜衣
 - name: キュアウィング(夕凪ツバサ)
   birthday: 5/21
-  cast_name: 村瀬歩
 - name: キュアバタフライ(聖あげは)
   birthday: 8/8
-  cast_name: 七瀬彩夏
 - name: キュアマジェスティ(プリンセス・エル)
   birthday: 3/12
-  cast_name: 古賀葵
 - name: キュアワンダフル(犬飼こむぎ)
   birthday: 5/13
-  cast_name: 長縄まりあ
 - name: キュアフレンディ(犬飼いろは)
   birthday: 8/7
-  cast_name: 種崎敦美
 - name: キュアニャミー(猫屋敷ユキ)
   birthday: 12/21
-  cast_name: 松田颯水
 - name: キュアリリアン(猫屋敷まゆ)
   birthday: 11/5
-  cast_name: 上田麗奈
 - name: キュアアイドル(咲良うた)
   birthday: 3/27
-  cast_name: 松岡美里
 - name: キュアウインク(蒼風なな)
   birthday: 7/6
-  cast_name: 髙橋ミナミ
 - name: キュアキュンキュン(紫雨こころ)
   birthday: 5/11
-  cast_name: 高森奈津美

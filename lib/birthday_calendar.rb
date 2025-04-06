@@ -123,9 +123,8 @@ class BirthdayCalendar
   def self.generate_precure_config
     characters = Precure.all.select(&:have_birthday?).each_with_object([]) do |girl, characters|
       characters << {
-        "name"      => "#{girl.precure_name}(#{girl.human_name})",
-        "birthday"  => girl.birthday,
-        "cast_name" => girl.cast_name,
+        "name"     => "#{girl.precure_name}(#{girl.human_name})",
+        "birthday" => girl.birthday,
       }
     end
 
