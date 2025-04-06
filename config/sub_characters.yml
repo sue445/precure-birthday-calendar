@@ -38,3 +38,14 @@ characters:
   # c.f. https://www.toei-anim.co.jp/tv/precure/character/cooking1.php
   - name:     ローズマリー
     birthday: "8/2"
+
+  # わんだふるぷりきゅあ！
+  - name:     兎山悟
+    birthday: "9/7"
+
+  - name:     兎山大福
+    birthday: "3/27"
+
+  - name:        ナツキ
+    birthday:    "7/15"
+    description: "ファミコンが発売された日"
