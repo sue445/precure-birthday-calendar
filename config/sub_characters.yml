@@ -12,12 +12,15 @@ characters:
   - name:      ラビリン
     birthday:  3/3
     cast_name: 加隈 亜衣
+
   - name:      ペギタン
     birthday:  4/25
     cast_name: 武田 華
+
   - name:      ニャトラン
     birthday:  2/22
     cast_name: 金田 アキ
+
   - name:      ラテ
     birthday:  11/1
     cast_name: 白石 晴香
@@ -33,9 +36,11 @@ characters:
   - name:      コメコメ
     birthday:  8/18
     cast_name: 高森奈津美
+
   - name:      パムパム
     birthday:  4/12
     cast_name: 日岡なつみ
+
   - name:      メンメン
     birthday:  11/11
     cast_name: 半場友恵
