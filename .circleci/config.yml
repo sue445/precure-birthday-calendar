@@ -21,9 +21,9 @@ jobs:
           cache_key_prefix: "v2-bundle"
       - run: bundle exec rspec
       - run:
-          name: generate_ical (dry run)
+          name: generate_all (dry run)
           command: |
-            bundle exec rake generate_ical
+            bundle exec rake generate_all
             git --no-pager diff
       - slack/notify-on-failure
 
