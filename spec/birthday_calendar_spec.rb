@@ -3,8 +3,8 @@ RSpec.describe BirthdayCalendar do
 
   let(:config_name) { "precure" }
 
-  let(:hagtan)    { Hashie::Mash.new(name: "はぐたん", birthday: "10/21") }
-  let(:cure_star) { Hashie::Mash.new(name: "キュアスター(星奈ひかる)", birthday: "4/12") }
+  let(:hagtan)    { Hashie::Mash.new(name: "はぐたん", birthday: "10/21", cast_name: "多田このみ") }
+  let(:cure_star) { Hashie::Mash.new(name: "キュアスター(星奈ひかる)", birthday: "4/12", cast_name: "成瀬瑛美") }
 
   describe ".generate_all_ical_files" do
     include_context "uses temp dir"
