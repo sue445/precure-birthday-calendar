@@ -18,4 +18,6 @@ task :generate_ical, [:config_name] => :environment do |_task, args|
   end
 end
 
-task :default => :generate_ical
+task :generate_all => %i[generate_precure_config generate_ical]
+
+task :default => :generate_all
