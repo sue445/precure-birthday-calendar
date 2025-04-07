@@ -16,7 +16,7 @@ git config user.email ${EMAIL}
 
 bundle exec rake generate_all
 
-changed_num=`git --no-pager diff --unified=0 -- docs/*.ics | grep -v "@@" | grep -v " a/" | grep -v " b/" | grep -v "index " | wc -l`
+changed_num=`git --no-pager diff --unified=0 -- docs/*.ics config/*.yml | grep -v "@@" | grep -v " a/" | grep -v " b/" | grep -v "index " | wc -l`
 
 if [ $changed_num == "0" ]; then
   echo "Not changed"
