@@ -4,6 +4,8 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 7
     assignees:
       - sue445
 
@@ -14,6 +16,10 @@ updates:
       timezone: Asia/Tokyo
       time: "05:00"
     open-pull-requests-limit: 99
+    cooldown:
+      default-days: 7
+      exclude:
+        - rubicure
     assignees:
       - sue445
     versioning-strategy: lockfile-only
