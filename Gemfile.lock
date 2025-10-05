@@ -24,7 +24,7 @@ GEM
     hashie (5.0.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    icalendar (2.11.2)
+    icalendar (2.12.0)
       base64
       ice_cube (~> 0.16)
       logger
@@ -32,7 +32,7 @@ GEM
     ice_cube (0.17.0)
     logger (1.7.0)
     minitest (5.25.5)
-    ostruct (0.6.2)
+    ostruct (0.6.3)
     rake (13.3.0)
     rspec (3.13.1)
       rspec-core (~> 3.13.0)
