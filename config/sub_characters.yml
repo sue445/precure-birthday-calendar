@@ -54,3 +54,13 @@ characters:
   - name:        ナツキ
     birthday:    7/15
     description: ファミコンが発売された日
+
+  # 名探偵プリキュア！
+  - name:     ポチタン
+    birthday: 4/22
+
+  - name:     マシュタン
+    birthday: 11/1
+
+  - name:     ジェット先輩
+    birthday: 12/17
